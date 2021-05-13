@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Unit Tests - Testing your Application: DoubleVector: Basic Functionality",
+      "setup": "",
+      "run": "bash -c \"set -o pipefail; mvn -q -B -Dtest=SummationAssignmentTest#testBasicFunctionality -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR test | grep -vF [ERROR]\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Unit Tests - Testing your Application: DoubleVector: Accuracy of Summation",
+      "setup": "",
+      "run": "bash -c \"set -o pipefail; mvn -q -B -Dtest=SummationAssignmentTest#testAccuracy -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR test | grep -vF [ERROR]\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
