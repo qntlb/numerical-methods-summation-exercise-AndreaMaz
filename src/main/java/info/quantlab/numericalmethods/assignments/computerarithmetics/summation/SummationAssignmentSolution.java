@@ -6,20 +6,13 @@ import info.quantlab.numericalmethods.lecture.computerarithmetics.summation.Doub
 public class SummationAssignmentSolution implements DoubleVectorFactory {
 
 	/**
-	 * Factory method creating an instance of an object
-	 * implementing DoubleVector.
-	 * 
+	 * Factory method creating an instance of an object implementing DoubleVector.
+	 *
 	 * @param values Array of values.
 	 * @return Object implementing DoubleVector interface.
 	 */
 	@Override
 	public DoubleVector createDoubleVector(double[] values) {
-		/*
-		 * Replace the line below this comment with a construction of your implementation
-		 * of the DoubleVector using the array values.
-		 * To test you implementation you may run
-		 * SummationAssignmentTest (see src/test/java)
-		 */
-		throw new UnsupportedOperationException("Method not implemented.");
+		return new DoubleVectorImplementation(values);
 	}
 }
